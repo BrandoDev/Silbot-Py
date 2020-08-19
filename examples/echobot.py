@@ -6,8 +6,7 @@ bot = silbot.botapi.BotApi(token)
 r, response = bot.getMe()
 print(response.expected_object.__module__)
 if not response.ok:
-    print("Error, wrong bot Token")
-    exit()
+    exit('Error, wrong bot Token')
 else:
     print("Bot @" + r.username + " started")
 
